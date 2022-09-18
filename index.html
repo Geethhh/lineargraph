@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>   
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="main.js"></script>        
+    </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            table,td{
+                border: none;
+                border-collapse: collapse;
+                text-align: center;
+                border-radius: 13px; 
+                border-spacing: 0;
+                }
+            button{
+                width: 100%;
+                height: 100%;
+                border-style: groove;
+                padding: 100%;
+                border: none;
+                margin: 0;
+                }
+            tr{
+                border-bottom: none;
+                }
+                body {
+                    margin:0; padding:0;
+                }
+                .wrapper {
+                    width: 500px; margin:0 auto;
+                }
+            </style>
+    <body>
+        <div>
+            <h1>Cartesian graph</h1>
+            <p style="color: red;">
+                <span id="status_message">Click a button </span>
+            </p>
+                <div class="wrapper">
+                    <table style="width:50%" align="left">
+                        <tr>
+                            <td>
+                                <input type="button" id="y_equals_x" value="Linear" style="color: green;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" id="y_equals_negative_x" value="Absolute value" style="color: purple;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <input type="button" id="y_equals_x" value="Quadratic" style="color: blue;"/>
+
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" id="y_equals_one_half_x" value="Exponential" style="color: brown"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            <canvas id="canvas" width="400" height="400"></canvas>
+            <input type="button" id="reset_grid" value="Reset Grid"/>
+        </div>
+    </body>
+</html>
